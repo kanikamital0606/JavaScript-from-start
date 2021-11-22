@@ -39,7 +39,17 @@ console.log('``````````````````````');
 delete specialops.addresses;
 console.log("specialops", specialops);
 
-//to acess all keys; apply for loop
-for(let key in specialops){
-    
-}
+/*************to acess all keys; apply for loop*************/
+// for(let key in specialops){
+//     console.log(key, ":", specialops[key]);
+// }
+
+
+/*********************to get Key from []***** */
+let propKey="age";
+console.log(specialops.age); //36
+console.log(specialops[propKey]); //36
+console.log(specialops["age"]); //36
+
+//undefined
+console.log(specialops.xyz);
